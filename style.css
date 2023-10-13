@@ -28,7 +28,13 @@ input{
 input:focus{
     outline: none;
 }
+.entries{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
 button{
+    display: none;
     padding: 5px;
     color: black;
     background-color: rgba(172, 255, 47, 0.705);
@@ -52,10 +58,13 @@ li img{
     border-radius: 8px;
     box-shadow: 2px 2px 2px rgba(245, 245, 245, 0.623);
 }
-@media (max-width: 700px){
+@media (max-width: 769px){
     #logo{
         height: 150px;
         margin: 20px;
+    }
+    button{
+        display: block;
     }
 }
 @media (max-width: 550px){
@@ -70,6 +79,7 @@ li img{
         height: 100px;
         margin: 10px;
     }
+    
 }
 @media (max-width: 376px) {
     #logo{
@@ -80,5 +90,12 @@ li img{
     li{
         font-size: 13px;
         margin: auto;
+    }
+    input{
+        width: 100px;
+        height: 15px;
+        font-size: 15px;
+    }button{
+        font-size: 15px;
     }
 }

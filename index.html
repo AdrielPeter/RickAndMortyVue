@@ -15,9 +15,12 @@
 
         <h1>Search for a character</h1>
 
-        <input type="text" v-model="input" v-on:change="change" placeholder="...">
-        <!--<button v-on:click="click( )">Search</button>-->
+        <div class="entries">
+            <input type="text" v-model="input" v-on:change="change" placeholder="...">
+            <button v-on:click="click()">Search</button>
+        </div>
 
+        
         <ul>
             <li v-for="character in characters">{{ character.name }}<br>
                 <img v-bind:src="character.image">
