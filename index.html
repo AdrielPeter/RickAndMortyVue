@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Rick and Morty Vue</title>
+</head>
+
+<body>
+    <div id="app">
+        <img src="assets/Rick_and_Morty.svg.png" alt="" srcset="">
+
+        <h1>Search for a character</h1>
+
+        <input type="text" v-model="input" v-on:change="change" placeholder="...">
+        <!--<button v-on:click="click( )">Search</button>-->
+
+        <ul>
+            <li v-for="character in characters">{{ character.name }}<br>
+                <img v-bind:src="character.image">
+            </li>
+        </ul>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
