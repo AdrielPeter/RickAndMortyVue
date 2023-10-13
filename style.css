@@ -28,13 +28,13 @@ input{
 input:focus{
     outline: none;
 }
-/*button{
+button{
     padding: 5px;
     color: black;
-    background-color: greenyellow;
+    background-color: rgba(172, 255, 47, 0.705);
     border-radius: 5px;
     border: none;
-}*/
+}
 ul{
     list-style: none;
     display: flex;
@@ -65,5 +65,20 @@ li img{
     }
     h1{
         font-size: 22px;
+    }
+    li img{
+        height: 100px;
+        margin: 10px;
+    }
+}
+@media (max-width: 376px) {
+    #logo{
+        height: 80px;
+        width: 250px;
+        margin: 20px;
+    }
+    li{
+        font-size: 13px;
+        margin: auto;
     }
 }
